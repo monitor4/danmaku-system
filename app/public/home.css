@@ -1,0 +1,60 @@
+#home{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    top:125px;
+}
+table{border-collapse: collapse;
+    border-spacing:0; 
+}
+#baidu{
+    display: inline-block;
+}
+#logo{
+    display: inline-block;
+}
+#text{
+    display: block;
+    float: left;
+    margin:0;
+    padding:0;
+    height: 33px;
+    font-size: 18px;
+    border:1px solid #aaa;
+    border-right-color: #0080ff;
+    padding-left: 5px;
+}
+#submit{
+    display: block;
+    float: left;
+    margin:0;
+    padding:0;
+    height: 35px;
+    width: 100px;
+    font-size: 15px;
+    background-color:#0080ff;
+    color:white;
+    border-color: #0080ff;
+    border-style: none;
+    border-radius: 0 2px 2px 0;
+}
+#text:hover{
+    border-color: #0080ff;
+}
+#text:focus{
+    border-color: #0080ff;
+}
+#pay{
+    position: relative;
+    top:150px;
+    width: 80px;
+    height: 80px;
+}
+p{
+    position: relative;
+    top:150px;
+    color:#777;
+    font-style: inherit;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="./resourse/jquery-3.3.1.min.js"></script>
+    <script src="./resourse/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="./movie.js"></script>
+    <script src="https://unpkg.com/monitors-js@1.1.1/lib/monitor.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./movie.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="tabbedPanel">
+        <ul class="tab">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#movie">视频</a></li>
+            <li><a href="#image">图片</a></li>
+        </ul>
+        <!--主页-->
+        <div id="home">
+            <a id="logo" href="http://www.baidu.com/"><img
+                    src="https://gss0.bdstatic.com/70cFsjip0QIZ8tyhnq/img/logo.gif" alt="Baidu"></a>
+            <br>
+            <br>
+            <form id="baidu" action="http://www.baidu.com/baidu" target="_blank">
+                <input id="text" type="text" name=word size=60>
+                <input id="submit" type="submit" value="百度一下">
+            </form>
+            <br>
+            <img id="pay" src="./image/qq_pic_merged_1550556631418.jpg">
+            <br>
+            <p>Author: monitor4</p>
+        </div>
+        <!--视频页-->
+        <div id="movie">
+            <div id="audio-box">
+                <video id="player" src="./movie/replay3.mp4" width="720"></video>
+            </div>
+            <!--控制台-->
+            <div id="control">
+                <!--进度条-->
+                <div id="progress">
+                    <div id="time"><span id='currentTime'>00:00</span>/<span id="duration">02:33</span>&nbsp</div>
+                    <div id="box-left"></div>
+                    <div id="node"></div>
+                    <div id="box-right"></div>
+                </div>
+                <!--工具栏-->
+                <div id="tools">
+                    <!--播放按钮-->
+                    <img id="play" src="./icon/bofang.png">
+                    <img id="danmaku-switch" src="./icon/bofangqi-danmukai.png">
+                    <form id="danmaku-inputBox">
+                        <input id="danmaku-input" type="text" name="text" placeholder="发条友善的弹幕见证当下吧">
+                        <input id="danmaku-submit" type="submit" value="发送" onclick="submit()">
+                    </form>
+                    <img id="sound" src="./icon/yinliang.png">
+                    <div id="sound-progress">
+                        <div id="sound-node"></div>
+                    </div>
+                </div>
+                <!--弹幕发送-->
+                <div id="danmaku">
+                </div>
+            </div>
+        </div>
+        <!--图片页-->
+        <div id="image">
+            <img src="image/polybridge_1.gif">
+        </div>
+    </div>
+</body>

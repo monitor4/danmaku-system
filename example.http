@@ -1,0 +1,12 @@
+POST http://localhost:7001/api/post HTTP/1.1
+content-type: application/json
+
+{
+    "text": "post测试",
+    "time":12
+}
+
+###
+
+GET http://localhost:7001/api/get HTTP/1.1
+
