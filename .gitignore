@@ -13,4 +13,5 @@ run/
 typings/
 .nyc_output/
 app/public/movie/replay3.mp4
+app/public/danmaku.json
 

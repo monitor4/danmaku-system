@@ -203,7 +203,7 @@ $(document).ready(function () {
   var button = document.getElementById('danmaku-submit')
   button.onclick = function () {
     $.ajax({
-      url: '../../api/post',
+      url: '../api/post',
       type: 'post',
       dataType: 'json',
       data: {
