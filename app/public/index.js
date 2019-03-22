@@ -16,8 +16,8 @@ $(document).ready(function() {
   //导航栏点击后修改对应样式
   $("ul li a").click(function(e) {
     var tab = $("ul li a");
-    tab.eq(e.target.index).css("font-weight", "bold");
     tab.eq(index).css("font-weight", "normal");
+    tab.eq(e.target.index).css("font-weight", "bold");
     index = e.target.index;
   });
 });

@@ -171,18 +171,18 @@ $(document).ready(function () {
           .appendTo("#audio-box");
           var total_width = $span.width() + $("#audio-box").width()
         for (i = 0; i < danmaku.path.length; i++) {
-          if (curTime > danmaku.path[i].delay && 1.0 * $("#audio-box").width() / total_width * speed / 1000 + curTime > danmaku.path[i].time) {
+          if (curTime > danmaku.path[i].delay && $("#audio-box").width() / total_width * speed / 1000 + curTime > danmaku.path[i].time) {
             road.index = i;
             break;
           }
-          else if (road.time > - 1.0 * $("#audio-box").width() / total_width * speed / 1000 - curTime + danmaku.path[i].time) {
+          else if (road.time > - $("#audio-box").width() / total_width * speed / 1000 - curTime + danmaku.path[i].time) {
             road.index = i;
-            road.time = - 1.0 * $("#audio-box").width() / total_width * speed / 1000 - curTime + danmaku.path[i].time
+            road.time = - $("#audio-box").width() / total_width * speed / 1000 - curTime + danmaku.path[i].time
           }
         }
         $span.css('top', 10 + 40 * road.index);
-        danmaku.path[road.index].time = curTime + 1.0 * speed / 1000;
-        danmaku.path[road.index].delay = curTime + 1.0 * speed * $span.width() / total_width / 1000
+        danmaku.path[road.index].time = curTime + speed / 1000;
+        danmaku.path[road.index].delay = curTime + speed * $span.width() / total_width / 1000
         $span.animate(
           {
             left: -1 * $span.width()

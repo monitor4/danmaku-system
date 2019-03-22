@@ -1,0 +1,14 @@
+#anima{
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+#canvas-box{
+  display: inline;
+  margin: 0 auto;
+}
+#canvas{
+  position: relative;
+  top:55px;
+  border:1px black  solid;
+}
